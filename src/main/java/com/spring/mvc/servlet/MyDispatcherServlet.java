@@ -41,7 +41,7 @@ public class MyDispatcherServlet extends HttpServlet {
         //3.拿到扫描到的类,通过反射机制,实例化,并且放到ioc容器中(k-v  beanName-bean) beanName默认是首字母小写
         doInstance();
         //4.初始化HandlerMapping(将url和method对应上)
-        initHandlerMapping()  ;
+        initHandlerMapping();
     }
 
     @Override
